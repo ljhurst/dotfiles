@@ -1,0 +1,1 @@
+localvimrc.vba: call delete('/home/lj/.vim/plugin/localvimrc.vim')
