@@ -2,11 +2,17 @@
 A repository to keep config files current
 
 Files
- * .profile
  * .bashrc
  * .bash_aliases
- * .vimrc
  * .gitconfig
+ * .profile
+ * .vimrc
 
 Folders
  * .vim
+
+Install
+`./init.sh`
+
+Update
+`git pull`
