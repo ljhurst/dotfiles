@@ -123,7 +123,10 @@ Plugin 'embear/vim-localvimrc'
 call vundle#end()
 
 "Reset variables
-filetype plugin on
+filetype plugin indent on
+
+"Enable omni-completion
+set omnifunc=syntaxcomplete#Complete
 
 "Don't ask to load local vimrc
 let g:localvimrc_ask=0
