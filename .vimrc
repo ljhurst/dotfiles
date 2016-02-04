@@ -98,9 +98,33 @@ command Prettify execute '%!python -m json.tool'
 
 "PLUGINS
 
+"Be improved
+set nocompatible
+
+"Required for Vundle
+filetype off
+
+"Set runtime path for Vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+
+"Initialize Vundle
+call vundle#begin()
+
+"Let Vundle manage Vundle
+Plugin 'VundleVim/Vundle.vim'
+
+"Enumerate tabs
+Plugin 'mkitt/tabline.vim'
+
+"Use local vimrc's
+Plugin 'embear/vim-localvimrc'
+
+"All plugins must be above this line
+call vundle#end()
+
+"Reset variables
+filetype plugin on
+
 "Don't ask to load local vimrc
 let g:localvimrc_ask=0
 let g:localvimrc_sandbox=0
-
-"Call pathogen to enable plugins in ~/.vim/bundle
-execute pathogen#infect()
