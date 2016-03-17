@@ -18,6 +18,12 @@ let g:tex_flavor = "latex"
 "Enable spell checking
 set spell spelllang=en_us
 
+"Remove incorrect spelling highlighting
+highlight clear SpellBad
+
+"Incorrect words are red and underlined
+highlight SpellBad cterm=underline ctermfg=red
+
 "Turn on a ruler at column 80
 set colorcolumn=80
 
@@ -123,7 +129,7 @@ Plugin 'embear/vim-localvimrc'
 call vundle#end()
 
 "Reset variables
-filetype plugin indent on
+filetype plugin on
 
 "Enable omni-completion
 set omnifunc=syntaxcomplete#Complete
