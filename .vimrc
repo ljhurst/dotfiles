@@ -18,11 +18,23 @@ let g:tex_flavor = "latex"
 "Enable spell checking
 set spell spelllang=en_us
 
-"Remove incorrect spelling highlighting
+"Remove spelling highlighting
 highlight clear SpellBad
+highlight clear SpellCap
+highlight clear SpellLocal
+highlight clear SpellRare
 
 "Incorrect words are red and underlined
 highlight SpellBad cterm=underline ctermfg=red
+
+"Non-capitalized words are blue and underlined
+highlight SpellCap cterm=underline ctermfg=blue
+
+"Locally used words are blue and underlined
+highlight SpellLocal cterm=underline ctermfg=blue
+
+"Rare words are blue and underlined
+highlight SpellRare cterm=underline ctermfg=blue
 
 "Turn on a ruler at column 80
 set colorcolumn=80
