@@ -1,7 +1,7 @@
 # This script configures the home directory to use shared config files
 # It creates symbolic links to all the files in this repo
 
-Ignore=('.' '..' '.git')
+Ignore=('.' '..' '.git' '.gitignore')
 
 # Remove non-shared config files
 # Create symbolic links to shared config files
