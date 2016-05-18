@@ -1,5 +1,5 @@
 # Set Mac aliases
-if [[ $OSTYPE == darwin* ]]; then
+if [[ "$OSTYPE" == "darwin"* ]]; then
     alias ls='ls -G'
 
     alias grep='grep -G'

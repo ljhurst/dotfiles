@@ -11,6 +11,7 @@ Files
 
 Folders
  * .vim
+ * scripts
 
 Install
  * `./init.sh`
