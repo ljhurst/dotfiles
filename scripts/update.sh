@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Print action
 echo 'Updating'
 echo '--------'
