@@ -16,3 +16,7 @@ for filename in {.*,*}; do
         echo Ignoring: $filename;
     fi
 done;
+
+# Install Vundle.vim and plugins
+git clone https://github.com/VundleVim/Vundle.vim ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
