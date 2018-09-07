@@ -2,7 +2,7 @@
     name = Luke Hurst
     email = hurstlj@umich.edu
 [push]
-    default = simple
+    default = current
 [color]
     ui = true
 [alias]
