@@ -7,6 +7,7 @@ Files
  * .eslintrc.json
  * .gitconfig
  * .gitignore_global
+ * .htmllintrc
  * .profile
  * .vimrc
 
