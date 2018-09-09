@@ -18,5 +18,11 @@ for filename in {.*,*}; do
 done;
 
 # Install Vundle.vim and plugins
-git clone https://github.com/VundleVim/Vundle.vim ~/.vim/bundle/Vundle.vim
+mkdir -p $HOME/.vim/bundle/Vundle.vim \
+    && cd $HOME/.vim/bundle/Vundle.vim \
+    && rm -rf .git \
+    && git init \
+    && git remote add origin https://github.com/VundleVim/Vundle.vim \
+    && git fetch origin master \
+    && git reset --hard origin/master
 vim +PluginInstall +qall
