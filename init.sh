@@ -8,10 +8,10 @@ ignore=('.' '..' '.git' '.gitignore' 'init.sh' 'README.md')
 for filename in {.*,*}; do
     # Ignore names in Ignore
     if [[ ! " ${ignore[@]} " =~ " $filename " ]]; then
-        echo Removing: "~"/$filename
-        rm -rf ~/$filename
-        echo Creating: "~"/$filename "-> ~/"${PWD##*/}/$filename
-        ln -s $PWD/$filename ~/$filename
+        echo Removing: "~/$filename"
+        rm -rf $HOME/$filename
+        echo Creating: "~/$filename" "-> ~/${PWD#$HOME/}/$filename"
+        ln -s $PWD/$filename $HOME/$filename
     else
         echo Ignoring: $filename;
     fi
