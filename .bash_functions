@@ -9,7 +9,12 @@ ip_public() {
 
 # Utility
 ipv4() {
-    echo $1 | tr - .
+    echo "${1:?}" | tr - .
+}
+
+# make directory; change to directory
+mkcd () {
+    mkdir "$1" && cd "$1" || return;
 }
 
 msufcu_routing_number() {
@@ -23,8 +28,8 @@ msufcu_routing_number() {
 
 # Work
 swoosh() {
-    [ -z "$1" ] && COLOR="white"  || COLOR="$1"
-    echo $fg[$COLOR]'
+    color="${1:-white}"
+    echo $fg[$color]'
              `.                                                         .--``
             o+                                                  `.:+sso+-
           :mh                                            .:/oydNNho:`

@@ -120,5 +120,3 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# make directory; change to directory
-mkcd () { mkdir "$1" && cd "$1"; }
