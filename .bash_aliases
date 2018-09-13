@@ -1,3 +1,6 @@
+# Set aliases
+alias zen='python -c "import this"'
+
 # Set Mac aliases
 if [[ "$OSTYPE" == "darwin"* ]]; then
     alias ls='ls -G'
