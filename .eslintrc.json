@@ -28,6 +28,10 @@
             "error",
             "all"
         ],
+        "eqeqeq": [
+            "error",
+            "always"
+        ],
         "indent": [
             "error",
             4,
