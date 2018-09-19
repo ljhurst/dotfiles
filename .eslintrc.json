@@ -16,9 +16,17 @@
         "react"
     ],
     "rules": {
+        "brace-style": [
+            "error",
+            "stroustrup"
+        ],
         "comma-spacing": [
             "error",
             { "before": false, "after": true }
+        ],
+        "curly": [
+            "error",
+            "all"
         ],
         "indent": [
             "error",
