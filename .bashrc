@@ -120,3 +120,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+complete -C /Users/lhurs1/go/bin/gocomplete go
