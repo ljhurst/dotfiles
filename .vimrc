@@ -137,6 +137,9 @@ Plugin 'mkitt/tabline.vim'
 "Use local vimrc's
 Plugin 'embear/vim-localvimrc'
 
+"Use JavaScript ES6 syntax highlighting
+Plugin 'isRuslan/vim-es6'
+
 "All plugins must be above this line
 call vundle#end()
 
