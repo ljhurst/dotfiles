@@ -18,6 +18,7 @@
         "react"
     ],
     "rules": {
+        "array-callback-return": "error",
         "brace-style": [
             "error",
             "stroustrup"
@@ -29,6 +30,10 @@
         "curly": [
             "error",
             "all"
+        ],
+        "dot-notation": [
+            "error",
+            { "allowKeywords": false }
         ],
         "eqeqeq": [
             "error",
@@ -59,9 +64,14 @@
             "error",
             "always"
         ],
+        "quote-props": [
+            "error",
+            "consistent-as-needed"
+        ],
         "quotes": [
             "error",
-            "single"
+            "single",
+            { "avoidEscape": true }
         ],
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
