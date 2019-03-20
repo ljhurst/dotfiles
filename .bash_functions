@@ -26,6 +26,14 @@ msufcu_routing_number() {
         | tr -dc "0-9" | xargs echo
 }
 
+envgrep () {
+    env | grep "$1"
+}
+
+ssh_passwordless() {
+    cat "${HOME}/.ssh/id_rsa.pub" | ssh "$1" 'cat >> .ssh/authorized_keys'
+}
+
 # Work
 swoosh() {
     color="${1:-white}"
