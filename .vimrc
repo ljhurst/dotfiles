@@ -15,6 +15,9 @@ syntax enable
 "Set LaTeX syntax highlighting
 let g:tex_flavor = "latex"
 
+"Set Jenkinsfile syntax highlighting
+au BufNewFile,BufRead Jenkinsfile setf groovy
+
 "Enable spell checking
 set spell spelllang=en_us
 
@@ -116,6 +119,9 @@ command Prettify execute '%!python -m json.tool'
 
 "PLUGINS
 
+"Hive
+au BufNewFile,BufRead *.hql setf hive
+
 "Be improved
 set nocompatible
 
@@ -134,11 +140,11 @@ Plugin 'VundleVim/Vundle.vim'
 "Enumerate tabs
 Plugin 'mkitt/tabline.vim'
 
-"Use local vimrc's
-Plugin 'embear/vim-localvimrc'
-
 "Use JavaScript ES6 syntax highlighting
 Plugin 'isRuslan/vim-es6'
+
+"Use Terraform syntax highlighting
+Plugin 'hashivim/vim-terraform'
 
 "All plugins must be above this line
 call vundle#end()
