@@ -13,3 +13,7 @@
 [core]
     editor = vim
     excludesfile = ~/.gitignore_global
+[pull]
+	ff = only
+[credential]
+	helper = store
