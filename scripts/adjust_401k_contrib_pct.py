@@ -56,7 +56,7 @@ def calculate_contribution_pct(
             )
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(description="Set your 401k contribution percent.")
     parser.add_argument("salary", type=float, help="Your annual salary")
     parser.add_argument(
