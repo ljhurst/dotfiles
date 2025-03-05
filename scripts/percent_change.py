@@ -12,7 +12,7 @@ def calculate_percent_change(initial: float, final: float) -> None:
     print(f"Percent change: {percent_change:.2f}%")
 
 
-def main():
+def main() -> None:
     parser = argparse.ArgumentParser(description="Calculate percent change.")
     parser.add_argument("initial", type=float, help="Initial value")
     parser.add_argument("final", type=float, help="Final value")
