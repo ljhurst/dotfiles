@@ -143,6 +143,10 @@ Plugin 'mkitt/tabline.vim'
 "Use JavaScript ES6 syntax highlighting
 Plugin 'isRuslan/vim-es6'
 
+"TypeScript syntax highlighting
+Plugin 'HerringtonDarkholme/yats.vim'
+set re=0
+
 "Use Terraform syntax highlighting
 Plugin 'hashivim/vim-terraform'
 
