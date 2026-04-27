@@ -16,10 +16,13 @@ syntax enable
 let g:tex_flavor = "latex"
 
 "Set Jenkinsfile syntax highlighting
-au BufNewFile,BufRead Jenkinsfile setf groovy
+au BufNewFile,BufRead *Jenkinsfile setf groovy
 
 "Enable spell checking
 set spell spelllang=en_us
+
+"But not on these file types
+autocmd FileType yaml setlocal nospell
 
 "Remove spelling highlighting
 highlight clear SpellBad
@@ -147,8 +150,14 @@ Plugin 'isRuslan/vim-es6'
 Plugin 'HerringtonDarkholme/yats.vim'
 set re=0
 
+"Astro syntax highlighting
+Plugin 'wuelnerdotexe/vim-astro'
+
 "Use Terraform syntax highlighting
 Plugin 'hashivim/vim-terraform'
+
+"Copilot
+Plugin 'github/copilot.vim'
 
 "All plugins must be above this line
 call vundle#end()
